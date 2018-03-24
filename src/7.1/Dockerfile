@@ -34,7 +34,7 @@ RUN wget https://phar.phpunit.de/phpunit-6.2.phar -O /usr/bin/phpunit \
 # Run the container as the configured user
 USER php:php
 
-# Execute composer
+# Execute the entry point
 ENTRYPOINT ["/usr/local/bin/docker-image-entrypoint"]
 
 # The default command to execute
