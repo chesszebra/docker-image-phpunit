@@ -28,7 +28,7 @@ RUN apt-get update \
 	wget
 
 # Install phpunit
-RUN wget https://phar.phpunit.de/phpunit-6.2.phar -O /usr/bin/phpunit \
+RUN wget https://phar.phpunit.de/phpunit-7.phar -O /usr/bin/phpunit \
  && chmod +x /usr/bin/phpunit
 
 # Run the container as the configured user
