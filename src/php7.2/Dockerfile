@@ -14,11 +14,6 @@ ADD usr/local/bin/docker-image-entrypoint.sh /usr/local/bin/docker-image-entrypo
 # Make it executable
 RUN chmod +x /usr/local/bin/docker-image-entrypoint
 
-# Update PECL and install XDebug
-RUN pecl update-channels \
- && pecl install xdebug \
- && docker-php-ext-enable xdebug
-
 # Copy over the configuration file for PHP
 COPY usr/local/etc/php/php.ini /usr/local/etc/php/php.ini
 
